@@ -1,6 +1,6 @@
 def merge_sort(string):
     if len(string) <= 1:
-        return string
+        return string or ''
 
     mid = len(string) // 2
     left = merge_sort(string[:mid])
@@ -28,13 +28,13 @@ def merge(left, right):
 
 
 def is_anagram(first_string, second_string):
+    first_string_lower = first_string.lower()
+    second_string_lower = second_string.lower()
+
+    first_string_sorted = merge_sort(first_string_lower)
+    second_string_sorted = merge_sort(second_string_lower)
+
     if first_string == '' or second_string == '':
-        return (merge_sort(first_string), merge_sort(second_string), False)
+        return (first_string_sorted, second_string_sorted, False)
 
-    first_string = first_string.lower()
-    second_string = second_string.lower()
-
-    first_string = merge_sort(first_string)
-    second_string = merge_sort(second_string)
-
-    return (first_string, second_string, first_string == second_string)
+    return (first_string_sorted, second_string_sorted, first_string_sorted == second_string_sorted)
