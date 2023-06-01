@@ -33,16 +33,7 @@ def is_anagram(first_string, second_string):
     first_string = first_string.lower()
     second_string = second_string.lower()
 
-    if len(first_string) != len(second_string):
-        return (first_string, second_string, False)
-
-    first_string = list(first_string)
-    second_string = list(second_string)
-
     first_string = merge_sort(first_string)
     second_string = merge_sort(second_string)
 
-    sorted_first_string = "".join(first_string)
-    sorted_second_string = "".join(second_string)
-
-    return (sorted_first_string, sorted_second_string, first_string == second_string)
+    return (first_string, second_string, first_string == second_string)
