@@ -2,16 +2,11 @@ def find_duplicate(nums):
     if not nums or type(nums) == str:
         return False
 
-    counter = {}
+    counter = counter_numbers(nums)
 
     for numbers in range(len(nums)):
         if not isinstance(nums[numbers], int) or nums[numbers] < 0:
             return False
-
-        if nums[numbers] in counter:
-            counter[nums[numbers]] += 1
-        else:
-            counter[nums[numbers]] = 1
 
     most_found = max(counter, key=counter.get)
 
@@ -19,3 +14,15 @@ def find_duplicate(nums):
         return most_found
     else:
         return False
+
+
+def counter_numbers(nums):
+    counter = {}
+
+    for number in nums:
+        if number in counter:
+            counter[number] += 1
+        else:
+            counter[number] = 1
+
+    return counter
