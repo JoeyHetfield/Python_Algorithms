@@ -1,13 +1,50 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Python Algorithm Challenges
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+### Description
+This project contains a collection of Python algorithms implemented as part of the learning process during my time as a student at Trybe. Each algorithm focuses on a different problem and showcases various programming concepts and techniques
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+The algorithms included in this project are:
+
+1 - Number of students studying at the same time (Search Algorithm)  
+2 - Inversion Encryption (Test-Driven Development)  
+3 - Palindromes (Recursion)  
+4 - Anagrams (Sorting Algorithm)  
+5 - Finding Duplicate Numbers (Search Algorithm)  
+6 - Palindromes (Iterative Approach)  
+
+The project provides an opportunity for others to clone and explore the algorithms. It is recommended to use a Python virtual environment for testing and running the project.
+
+## Installation
+To clone the project and set up the virtual environment, follow these steps:
+
+Clone the repository:
+
+>   git clone git@github.com:JoeyHetfield/Python_Algorithms.git
+
+Change into the project directory and create a virtual environment:
+
+>  python3 -m venv .venv
+>  
+Activate the virtual environment:
+
+> source .venv/bin/activate
+
+
+Install the dependencies in the virtual environment:
+
+
+> python3 -m pip install -r dev-requirements.txt
+
+
+## Usage
+Running the Tests
+To execute the tests, ensure that you have the virtual environment activated.
+
+Run the following command:
+
+> python3 -m pytest
+> 
+The tests will be run, and the results will be displayed in the console.
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
