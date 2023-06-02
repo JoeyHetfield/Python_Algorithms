@@ -5,6 +5,9 @@ def find_duplicate(nums):
     counter = {}
 
     for numbers in range(len(nums)):
+        if not isinstance(nums[numbers], int) or nums[numbers] < 0:
+            return False
+
         if nums[numbers] in counter:
             counter[nums[numbers]] += 1
         else:
