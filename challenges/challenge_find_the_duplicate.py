@@ -9,14 +9,10 @@ def find_duplicate(nums):
             counter[nums[numbers]] += 1
         else:
             counter[nums[numbers]] = 1
-        
-    most_found = max(counter)
+
+    most_found = max(counter, key=counter.get)
 
     if counter[most_found] > 1:
         return most_found
     else:
         return False
-    
-
-
-

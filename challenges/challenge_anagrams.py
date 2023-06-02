@@ -37,4 +37,8 @@ def is_anagram(first_string, second_string):
     if first_string == '' or second_string == '':
         return (first_string_sorted, second_string_sorted, False)
 
-    return (first_string_sorted, second_string_sorted, first_string_sorted == second_string_sorted)
+    return (
+        first_string_sorted,
+        second_string_sorted,
+        first_string_sorted == second_string_sorted
+        )
