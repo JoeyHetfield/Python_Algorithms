@@ -4,15 +4,19 @@ def find_duplicate(nums):
 
     counter = {}
 
-    nums.sort()
-
     for numbers in range(len(nums)):
         if nums[numbers] in counter:
             counter[nums[numbers]] += 1
         else:
             counter[nums[numbers]] = 1
         
+    most_found = max(counter)
 
+    if counter[most_found] > 1:
+        return most_found
+    else:
+        return False
+    
 
 
 
